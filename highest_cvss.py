@@ -15,7 +15,7 @@ def get_highest_cvss_from_text(cve_text: str, delimiter: str = ','):
     # -------------------------------------------------------------
     # 1) 入力文字列 → リスト化
     # -------------------------------------------------------------
-    for ch in ['\n', '\r', '\t', ' ']:
+    for ch in ['\n', '\r', '\t', ' ', '、', '，']:
         cve_text = cve_text.replace(ch, delimiter)
     cve_list = [cve.strip() for cve in cve_text.split(delimiter) if cve.strip()]
 
