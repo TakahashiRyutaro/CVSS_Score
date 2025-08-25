@@ -61,7 +61,7 @@
 1. スクリプトを実行します。
 
     ```bash
-    python cve_cvss_highest.py
+    python highest_cvss.py
     ```
 
 2. **CVE-IDの入力**  
