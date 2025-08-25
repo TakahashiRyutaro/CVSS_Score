@@ -140,9 +140,10 @@ def get_highest_cvss_from_text(cve_text: str, delimiter: str = ','):
 # メイン処理（ユーザ入力）
 # -------------------------------------------------------------
 if __name__ == "__main__":
-    print("カンマ・改行・スペース区切りで CVE-ID を入力してください：")
+    print("CVE-ID を入力してください：")
     user_cve_text = ""
     while not user_cve_text.strip():
         user_cve_text = input("> ").strip()
+
 
     get_highest_cvss_from_text(user_cve_text)
